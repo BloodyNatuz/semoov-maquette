@@ -15,6 +15,12 @@ a{
     opacity: 75%;
 }
 
+/* HEADER */
+header{
+    background-image: url("../img/home-bg.webp");
+    height: 100vh;
+}
+
 /* NAVBAR */
 nav{
     display: flex;
