@@ -24,11 +24,17 @@ a{
 
 h1{
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 72pt;
+}
+
+h2{
+    font-size: 48pt;
 }
 
 /* HEADER */
 header{
     background-image: url("../img/home-bg.webp");
+    background-size: cover;
     height: 100vh;
 }
 
@@ -120,4 +126,24 @@ nav a{
     align-items: flex-start;
     height: 50vh;
     margin: 0 10em;
+    margin-top: 5em;
+}
+
+.hero h1{
+    font-size: 96pt;
+}
+
+.hero h2{
+    font-size: 64pt;
+    width: 50%;
+    margin: -1em 0;
+}
+
+.hero h2 span{
+    color: #0074d9;
+}
+
+.hero p{
+    padding-top: 5em;
+    width: 25%;
 }
