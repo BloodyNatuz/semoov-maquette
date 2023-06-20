@@ -1,8 +1,14 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 /* GENERAL */
 body{
     padding: 0;
     margin: 0;
     color: #0D1821;
+    font-family: 'Poppins', sans-serif;
 }
 
 li{
@@ -13,6 +19,11 @@ a{
     text-decoration: none;
     color: #0D1821;
     opacity: 75%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* HEADER */
