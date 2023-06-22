@@ -10,6 +10,7 @@ body{
     color: #0D1821;
     font-family: 'Poppins', sans-serif;
     font-size: 16pt;
+    background-color: #f8f9f0;
 }
 
 li{
@@ -77,6 +78,14 @@ header{
     height: 100vh;
 }
 
+/* HEADER RESPONSIVE*/
+
+@media (max-width:900px) {
+    header{
+        background-image: none;
+    }
+  }
+
 /* NAVBAR */
 nav{
     display: flex;
@@ -138,6 +147,8 @@ nav a:hover{
     nav{
         flex-direction: column;
         align-items: center;
+        border-bottom: solid 2px #0D1821;
+        padding-bottom: 3vh;
     }
 
     nav ul{
@@ -173,16 +184,16 @@ nav a:hover{
     align-items: flex-start;
     height: 50vh;
     margin: 0 10em;
-    margin-top: 5em;
+    margin-top: 10vh;
 }
 
 .hero h1{
-    font-size: 96pt;
+    font-size: 80pt;
 }
 
 .hero h2{
-    font-size: 64pt;
-    width: 50%;
+    font-size: 52pt;
+    width: 75%;
     margin: -1em 0;
 }
 
@@ -191,11 +202,104 @@ nav a:hover{
 }
 
 .hero p{
-    padding-top: 5em;
-    padding-bottom: 2em;
+    padding-top: 3em;
+    padding-bottom: 1em;
     width: 30%;
 }
 
 .hero .btn-primary{
     font-size: 14pt;
 }
+
+/* HERO RESPONSIVE */
+@media (max-width:900px) {
+    .hero{
+        margin: 0;
+        margin-top: 5em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero .hero-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero h1{
+        font-size: 48pt;
+    }
+    
+    .hero h2{
+        font-size: 32pt;
+        width: 70%;
+        margin: 0;
+    }
+    
+    .hero p{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 70%;
+    }
+
+    .hero .btn-primary{
+        font-size: 12pt;
+    }
+  }
+
+  /* REASSURANCE */
+
+.reassurance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+    padding: 2vh 0;
+    background-color: rgb(248, 249, 240, 0.9);
+    position: relative;
+    top: 13.5vh;
+}
+
+.reassurance .assurance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    padding: 0 2em;
+}
+
+.reassurance .assurance img{
+    height: 25%;
+    width: auto;
+}
+
+.reassurance .assurance p{
+    font-size: 14pt;
+    margin: 0;
+}
+
+/* REASSURANCE RESPONSIVE */
+
+@media (max-width:900px) {
+    .reassurance{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        padding: 1vh 0;
+        border-top: 1px solid #0D1821;
+        border-bottom: 1px solid #0D1821;
+    }
+
+    .reassurance .assurance{
+        width: 50%;
+        padding: 3vh 0;
+    }
+  }
