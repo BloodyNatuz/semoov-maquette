@@ -30,6 +30,17 @@ h1{
 
 h2{
     font-size: 48pt;
+    text-decoration: solid underline #0074d9 2px;
+    text-underline-offset: 1vh;
+    width: fit-content;
+}
+
+h3{
+    text-decoration: solid underline #0074d9 2px;
+    text-underline-offset: 0.5vh;
+    width: fit-content;
+    transition: all 0.3s ease;
+
 }
 
 .btn-primary{
@@ -195,6 +206,7 @@ nav a:hover{
     font-size: 52pt;
     width: 75%;
     margin: -1em 0;
+    text-decoration: none;
 }
 
 .hero h2 span{
@@ -301,5 +313,95 @@ nav a:hover{
     .reassurance .assurance{
         width: 50%;
         padding: 3vh 0;
+    }
+  }
+
+/* CATEGORIES */
+
+.categories{
+    margin: 0 10em;
+}
+
+.categories .category-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: fit-content;
+    position: relative;
+}
+
+.categories .category a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories .category a img{
+    height: 40vh;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.categories .category a img:hover{
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+
+.categories .category a h3:hover{
+    text-decoration: solid underline #85C6FF 2px;
+    text-underline-offset: 0.5vh;
+    transition: all 0.3s ease;
+}
+
+.categories .category a p{
+    font-size: 14pt;
+    text-align: center;
+    width: 15vw;
+}
+
+/* CATEGORY RESPONSIVE */
+
+@media (max-width:900px) {
+    .categories{
+        margin: 0 5em;
+        margin-top: 40em;
+    }
+
+    .categories h2{
+        font-size: 28pt;
+        text-align: center;
+    }
+
+    .categories .category-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+
+    .categories .category a{
+        width: 100%;
+        padding: 3vh 0;
+    }
+
+    .categories .category a img{
+        height: 40vh;
+        width: auto;
+        transition: all 0.3s ease;
+    }
+
+    .categories .category a h3{
+        font-size: 18pt;
+        text-align: center;
+    }
+
+    .categories .category a p{
+        font-size: 12pt;
+        text-align: center;
+        width: 70%;
     }
   }
