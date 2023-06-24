@@ -42,7 +42,13 @@ h3{
     text-underline-offset: 0.5vh;
     width: fit-content;
     transition: all 0.3s ease;
+}
 
+h4{
+    text-decoration: solid underline #0074d9 2px;
+    text-underline-offset: 0.5vh;
+    transition: all 0.3s ease;
+    font-size: 24pt;
 }
 
 .btn-primary{
@@ -69,12 +75,13 @@ h3{
     background-color: rgb(255, 255, 255, 0);
     color: #0D1821;
     border: 2px solid #0D1821;
-    border-radius: 100px;
-    padding: 10px 25px;
+    border-radius: 100px !important;
+    padding: 10px 25px !important;
     cursor: pointer;
     font-weight: lighter;
     text-transform: uppercase;
     transition: all 0.5s ease;
+    width: fit-content !important;
 }
 
 .btn-secondary:hover{
@@ -82,6 +89,11 @@ h3{
     color: #f8f9f0;
     border: 2px solid #0D1821;
     transition: all 0.5s ease;
+}
+
+.hero-separator{
+    background-color: #0D1821;
+    margin: 5em 2em;
 }
 
 /* PAGE D'ACCUEIL */
@@ -683,6 +695,8 @@ footer .legal{
 .aboutchiffre .about-info p{
     text-align: center;
     width: 99%;
+    font-size: 14pt;
+
 }
 
 .aboutchiffre .about-info p span{
@@ -701,7 +715,7 @@ footer .legal{
 
     .aboutchiffre .about-info{
         width: 100%;
-        margin: 2em 0;
+        margin: 1em 0;
     }
 
     .aboutchiffre .about-info p{
@@ -731,5 +745,219 @@ footer .legal{
 
     .about-expedia img{
         scale: 0.5;
+    }
+}
+
+/* PAGE CONTACT */
+
+/* HEADER */
+.contact-header{
+    background-image: url("../img/contact-bg.webp");
+    background-size: cover;
+    height: fit-content;
+    padding-bottom: 5em;
+}
+
+/* HERO */
+
+.contact-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10em;
+}
+
+.contact-hero-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 3em;
+}
+
+.contact-hero .contact-hero-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-hero .contact-hero-intro h3{
+    text-decoration: none;
+}
+
+.contact-hero .contact-hero-intro h3 span{
+    color: #0074d9;
+}
+
+.contact-hero-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-hero-form form{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-hero-form .contact-form-input input, .contact-hero-form .contact-form-input textarea{
+    width: 75%;
+    padding: 1em 1em;
+    margin: .5em 0;
+    border: 1px solid #0D1821;
+    border-radius: .2em;
+}
+
+/* HERO RESPONSIVE */
+
+@media (max-width:900px){
+    .contact-hero{
+        margin: 0 1.3em;
+    }
+
+    .contact-hero h1{
+        font-size: 40pt;
+    }
+
+    .contact-hero h2{
+        font-size: 31pt;
+    }
+
+    .contact-hero-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-hero .contact-hero-intro{
+        margin-bottom: 2em;
+        text-align: center;
+    } 
+
+    .contact-hero-form .contact-form-input input, .contact-hero-form .contact-form-input textarea{
+        width: 75%;
+    }
+}
+
+/* CONTACT INFOS */
+
+.contact-infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5em 0;
+    width: 100%;
+}
+
+.contact-infos .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 15vw;
+}
+
+.contact-infos .contact-info p{
+    text-align: center;
+    width: 100%;
+    font-size: 14pt;
+}
+
+/* CONTACT INFOS RESPONSIVE */
+
+@media (max-width:900px){
+    .contact-infos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: -3em 0;
+    }
+
+    .contact-infos .contact-info{
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .contact-infos .contact-info p{
+        width: 50%;
+    }
+}
+
+/* FAQ */
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10em;
+}
+
+.faq .faq-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.faq .faq-content h3{
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+}
+
+.faq h3 span{
+    color: #0074d9;
+}
+
+.faq .faq-content .questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    margin-top: 3em;
+    margin-bottom: 5em;
+
+}
+
+.faq .faq-content .questions hr{
+    width: 50%;
+    height: 1px;
+    background-color: #0D1821;
+}
+
+/* FAQ RESPONSIVE */
+
+@media (max-width:900px){
+    .faq{
+        margin: 0 1.3em;
+        margin-top: 5em;
+    }
+
+    .faq h2{
+        font-size: 32pt;
+        text-align: center;
+    }
+
+    .faq .faq-content h3{
+        width: 100%;
+    }
+
+    .faq .faq-content .questions{
+        width: 100%;
+    }
+
+    .faq .faq-content .questions hr{
+        width: 25%;
+    }
+
+    .faq .faq-content .questions .h4{
+        font-size: 16pt;
     }
 }
