@@ -505,3 +505,116 @@ nav a:hover{
         display: none;
     }
 }
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10em;
+}
+
+.footer-brand{
+    width: 15em;
+    height: auto;
+}
+
+footer .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    grid-template-areas: 
+    "links links socialmedia";
+    margin-left: -10.5em;
+}
+
+footer .links .sitemap{
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    height: fit-content;
+    width: max-content;
+    scale: 0.7;
+}
+
+footer .links .sitemap .sitemap-title{
+    font-size: 16pt;
+    margin-bottom: 1em;
+    text-decoration: solid underline #0074d9 2px;
+}
+
+footer .links .sitemap li{
+    font-size: 14pt;
+}
+
+footer .links .socialmedia{
+    grid-area: socialmedia;
+    scale: 0.7;
+    text-align: center;
+}
+
+footer .links .socialmedia-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+footer .links .socialmedia-icon a{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin: 0 .3em;
+}
+
+footer .links .socialmedia-icon a:hover{
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+footer .legal{
+    font-size: 7pt;
+}
+
+/* FOOTER RESPONSIVE */
+
+@media (max-width:900px){
+    footer{
+        margin: 0 1.3em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-brand{
+        width: 10em;
+        height: auto;
+    }
+
+    footer .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    footer .links .sitemap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -7em;
+    }
+
+    footer .links .sitemap-tree{
+        padding: 0;
+    }
+
+    footer .links .socialmedia{
+        margin-top: -7em;
+    }
+}
