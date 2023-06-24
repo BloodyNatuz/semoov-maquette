@@ -26,6 +26,8 @@ a{
 h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 72pt;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2{
@@ -82,8 +84,10 @@ h3{
     transition: all 0.5s ease;
 }
 
+/* PAGE D'ACCUEIL */
+
 /* HEADER */
-header{
+.home-header{
     background-image: url("../img/home-bg.webp");
     background-size: cover;
     height: 100vh;
@@ -93,7 +97,7 @@ header{
 
 @media (max-width:900px) {
     header{
-        background-image: none;
+        background-image: none !important;
     }
   }
 
@@ -200,6 +204,8 @@ nav a:hover{
 
 .hero h1{
     font-size: 80pt;
+    text-transform: none;
+    text-align: start;
 }
 
 .hero h2{
@@ -603,18 +609,127 @@ footer .legal{
     }
 
     footer .links .sitemap{
+        display: none;
+    }
+}
+
+/* PAGE A PROPOS */
+
+/* HEADER */
+.about-header{
+    background-image: url("../img/about-bg.webp");
+    background-size: cover;
+    height: fit-content;
+    padding-bottom: 5em;
+}
+
+/* HERO */
+.about-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10em;
+}
+
+.about-hero h1{
+    text-align: center;
+}
+
+.about-hero p{
+    width: 60%;
+}
+
+/* HERO RESPONSIVE */
+
+@media (max-width:900px){
+    .about-hero{
+        margin: 0 1.3em;
+    }
+
+    .about-hero h1{
+        font-size: 40pt;
+    }
+
+    .about-hero h2{
+        font-size: 32pt;
+        text-align: center;
+    }
+
+    .about-hero p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* CHIFFRES CLEF */
+
+.aboutchiffre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5em 0;
+    width: 100%;
+}
+
+.aboutchiffre .about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+}
+
+.aboutchiffre .about-info p{
+    text-align: center;
+    width: 99%;
+}
+
+.aboutchiffre .about-info p span{
+    font-weight: bolder;
+}
+
+/* CHIFFRE CLEF RESPONSIVE */
+
+@media (max-width:900px){
+    .aboutchiffre{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        margin-top: -7em;
+        margin: -3em 0;
     }
 
-    footer .links .sitemap-tree{
-        padding: 0;
+    .aboutchiffre .about-info{
+        width: 100%;
+        margin: 2em 0;
     }
 
-    footer .links .socialmedia{
-        margin-top: -7em;
+    .aboutchiffre .about-info p{
+        width: 50%;
+    }
+}
+
+/* EXPEDIA GROUP */
+
+.about-expedia{
+    background-image: url("../img/expedia-bg.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    margin-bottom: 5em;
+}
+
+/* EXPEDIA GROUP RESPONSIVE */
+
+@media (max-width:900px){
+    .about-expedia{
+        margin: 5em 0;
+    }
+
+    .about-expedia img{
+        scale: 0.5;
     }
 }
