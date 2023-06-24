@@ -406,3 +406,102 @@ nav a:hover{
         width: 70%;
     }
   }
+
+/* AVIS */
+
+.home-avis{
+    margin: 0 10em;
+}
+
+.avis-and-plane{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    grid-template-areas: 
+    "avis avis avis plane"
+    ;
+}
+
+.avis{
+    grid-area: avis;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    scale: 0.8;
+}
+
+.avis .avis-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #85C6FF;
+    padding: 1em 2em;
+    margin: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.avis .avis-header span{
+    font-weight: bolder;
+}
+
+.avis .stars{
+    color: grey;
+    margin: -.5em 0;
+}
+
+.avis .stars .gold{
+    color: #ffdc0f;
+}
+
+.plane-anim{
+    grid-area: plane;
+}
+
+.avis-and-plane iframe{
+    border: none;
+    scale: 1.5;
+}
+
+/* AVIS RESPONSIVE */
+
+@media (max-width:900px) {
+    .home-avis{
+        margin: 5em 1.3em 0 1.3em;
+    }
+
+    .home-avis h2{
+        font-size: 28pt;
+        text-align: center;
+    }
+
+    .avis-and-plane{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        margin-top: -8em;
+    }
+
+    .avis{
+        grid-area: avis;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: flex-start;
+        height: fit-content;
+        scale: 0.8;
+    }
+
+    .plane-anim{
+        display: none;
+    }
+}
