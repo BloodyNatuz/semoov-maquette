@@ -22,3 +22,13 @@ searchbar.addEventListener('keypress', function(event) {
         console.log('enter');
     }
 });
+
+// Travel Filter
+
+const travelFilter = document.querySelector('.travel-filtres');
+const filter = document.querySelector('.filtres');
+
+travelFilter.addEventListener('click', function() {
+    filter.classList.toggle('show');
+    console.log('filter');
+});
