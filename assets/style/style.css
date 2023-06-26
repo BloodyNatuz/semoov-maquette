@@ -473,7 +473,7 @@ nav a:hover{
     margin: -.5em 0;
 }
 
-.avis .stars .gold{
+.stars .gold{
     color: #ffdc0f;
 }
 
@@ -1015,4 +1015,223 @@ footer .legal{
     border: none;
     padding: .5em 1em;
     width: 90%;
+}
+
+/* HERO RESPONSIVE */
+
+@media (max-width:900px){
+    .category-hero{
+        padding: 2em 0;
+    }
+
+    .category-hero h1{
+        font-size: 40pt;
+    }
+
+    .searchbar{
+        width: 50%;
+    }
+}
+
+/* TRAVELS */
+
+.travels{
+    margin: 0 10em;
+    margin-top: 5em;
+}
+
+.travels .travel-searching{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* FILTRAGE */
+
+.travel-searching .travel-filtres{
+    width: 25%;
+}
+
+.travel-searching .travel-filtres .travelh3 img{
+    display: none;
+}
+
+.travel-searching .filtres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2em 0;
+}
+
+.travel-searching .filtres .filtre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+
+.travel-searching .filtres .filtre input{
+    white-space: nowrap;
+    display: inline;
+}
+
+.travel-searching .filtres .filtre .price-range{
+    width: fit-content;
+}
+
+/* TRAVEL LIST */
+
+.travel-searching .triage select{
+    padding: .5em .5em;
+    border-radius: 50px;
+}
+
+.travel-searching .travel-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 75%;
+}
+
+.travel-searching .travel-list .travel{
+    margin: 1em 0;
+    background-color: #0D1821;
+    transition: all .3s ease;
+}
+
+.travel-searching .travel-list .travel:hover{
+    scale: 1.01;
+    transition: all .3s ease;
+}
+
+.travel-searching .travel-list .travel img{
+    width: 40em;
+    height: 15em;
+    object-fit: cover;
+}
+
+.travel-searching .travel-list .travel .travel-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D1821;
+    color: #f8f9f0;
+    padding: 0 1em;
+}
+
+.travel-searching .travel-list .travel .travel-body p, .travel-searching .travel-list .travel .travel-body .travel-star{
+    margin: 0;
+    padding: .5em 1em;
+}
+
+.travel-searching .travel-list .travel .travel-body .travel-body-l #travel-note{
+    opacity: .5;
+}
+
+.travel-searching .travel-list .travel .travel-body .travel-body-r #travel-price span{
+    opacity: .5;
+}
+
+.travel-searching .travel-list .travel .travel-body .travel-star{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.travel-searching .travel-list .travel .travel-body .travel-star img{
+    width: 10%;
+    height: auto;
+    padding-left: .5em;
+}
+
+/* TRAVELS RESPONSIVE */
+
+@media (max-width:900px){
+    .travels{
+        margin: 0 1.3em;
+    }
+
+    .travels h2{
+        font-size: 30pt;
+    }
+
+    .travels .travel-searching{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .travel-searching .travel-filtres{
+        width: 75%;
+    }
+
+    .travel-searching .travel-filtres hr{
+        display: none;
+    }
+
+    .travel-searching .travel-filtres .filtres{
+        display: none;
+        border: 1px solid #0D1821;
+        border-radius: 50px;
+        padding: 0 1em;
+    }
+
+    .travel-searching .travel-filtres .travelh3{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .travel-searching .travel-filtres .travelh3 h3{
+        text-decoration: none;
+    }
+
+    .travel-searching .travel-filtres .travelh3 img{
+        display: block;
+        width: 1.5em;
+        height: auto;
+        margin-left: .5em;
+    }
+    
+    .travel-searching .travel-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .travel-searching .travel-results{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .travel-searching .travel-list .travel img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .travel-searching .travel-list .travel .travel-body{
+        font-size: 7pt;
+        padding: 1em 1em;
+    }
+
+    .travel-searching .travel-list .travel .travel-body .travel-star .stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .travel-searching .travel-list .travel .travel-body .travel-star .stars .material-symbols-outlined{
+        scale: .6;
+    }
 }
