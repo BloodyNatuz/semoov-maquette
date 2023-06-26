@@ -46,10 +46,264 @@
             <h1>TOUTES LES CATÉGORIES</h1>
             <div class="searchbar">
                 <button class="searchbar-btn" type="submit"><img src="assets/img/search-icon.svg" alt="Icone de loupe"></button>
-                <input class="searchbar-input" type="text" placeholder="Rechercher une catégorie">
+                <input class="searchbar-input" type="text" placeholder="Rechercher...">
             </div>
         </section>
     </header>
+
+    <section class="travels">
+        <h2>Les voyages</h2>
+        <div class="travel-searching">
+            <aside class="travel-filtres">
+                <div class="travelh3">
+                    <h3>Filtrer par</h3>
+                    <img src="assets/img/filter.svg" alt="Icon de filtre" id="travel-filter">
+                </div>
+                <hr>
+                <div class="filtres">
+                    <div class="filtre">
+                        <p><span>Option de voyage</span></p>
+                        <div class="checkbox">
+                            <input type="checkbox" name="plane" id="checkbox-plane">
+                            <label for="plane">Avion compris</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="hostel" id="checkbox-hostel">
+                            <label for="hostel">Hôtel compris</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="pool" id="checkbox-pool">
+                            <label for="pool">Avec piscine</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="food" id="checkbox-food">
+                            <label for="food">Nourriture comprise</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="activities" id="checkbox-activities">
+                            <label for="activities">Activités comprise</label>
+                        </div>
+                    </div>
+
+                    <div class="filtre">
+                        <p><span>Prix</span></p>
+                        <div class="price-range">
+                            De <input type="number" class="num" placeholder="0€"> à <input type="number" class="num" placeholder="1 500€">
+                        </div>
+                    </div>
+
+                    <div class="filtre">
+                        <p><span>Note des voyageurs</span></p>
+                        <div class="radio">
+                            <input type="radio" name="low" id="radio-low">
+                            <label for="low">>5</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="medium" id="radio-medium">
+                            <label for="medium">>7</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="high" id="radio-high">
+                            <label for="high">>=9</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="very-high" id="radio-very-high">
+                            <label for="very-high">=10</label>
+                        </div>
+                    </div>
+
+                    <div class="filtre">
+                        <p><span>Étoiles</span></p>
+                        <div class="radio">
+                            <input type="radio" name="one" id="radio-one">
+                            <label for="one">1 ou plus</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="two" id="radio-two">
+                            <label for="two">2 ou plus</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="three" id="radio-three">
+                            <label for="three">3 ou plus</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="four" id="radio-four">
+                            <label for="four">4 ou plus</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="five" id="radio-five">
+                            <label for="five">5</label>
+                        </div>
+                    </div>
+
+                    <div class="filtre">
+                        <p><span>Genres</span></p>
+                        <div class="checkbox">
+                            <input type="checkbox" name="fantastic" id="checkbox-fantastic">
+                            <label for="fantastic">Fantastique</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="horror" id="checkbox-horror">
+                            <label for="horror">Horreur</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="sic-fi" id="checkbox-sic-fi">
+                            <label for="sic-fi">Science-fiction</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="action" id="checkbox-action">
+                            <label for="action">Action</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="animation" id="checkbox-animation">
+                            <label for="animation">Film d'animation</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="policier" id="checkbox-policier">
+                            <label for="policier">Policier</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="drama" id="checkbox-drama">
+                            <label for="drama">Drame</label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="travel-results">
+                <div class="triage">
+                    <select name="cars" id="cars">
+                        <option value="recommande">Recommandés</option>
+                        <option value="price-low">Prix dans l’ordre croissant</option>
+                        <option value="price-high">Prix dans l’ordre décroissant</option>
+                        <option value="star-high">Étoiles dans l’ordre croissant</option>
+                        <option value="star-low">Étoiles dans l’ordre décroissant</option>
+                    </select>
+                </div>
+                <div class="travel-list">
+                    <div class="travel">
+                        <img src="assets/img/travel1-bg.webp" alt="Hotel vu de dehors" class="travel-head">
+                        <div class="travel-body">
+                            <div class="travel-body-l">
+                                <p id="travel-name">Parc Seigneur des Anneaux</p>
+                                <p id="travel-note">8,4/10</p>
+                            </div>
+                            <div class="travel-body-r">
+                                <p id="travel-price">845€<span>/ personnes</span></p>
+                                <div class="travel-star">
+                                    <div class="stars">
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                    </div>
+                                    <img src="assets/img/hotel-icon.svg" alt="Icon d'hotel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="travel">
+                        <img src="assets/img/travel1-bg.webp" alt="Hotel vu de dehors" class="travel-head">
+                        <div class="travel-body">
+                            <div class="travel-body-l">
+                                <p id="travel-name">Parc Seigneur des Anneaux</p>
+                                <p id="travel-note">8,4/10</p>
+                            </div>
+                            <div class="travel-body-r">
+                                <p id="travel-price">845€<span>/ personnes</span></p>
+                                <div class="travel-star">
+                                    <div class="stars">
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                    </div>
+                                    <img src="assets/img/hotel-icon.svg" alt="Icon d'hotel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="travel">
+                        <img src="assets/img/travel1-bg.webp" alt="Hotel vu de dehors" class="travel-head">
+                        <div class="travel-body">
+                            <div class="travel-body-l">
+                                <p id="travel-name">Parc Seigneur des Anneaux</p>
+                                <p id="travel-note">8,4/10</p>
+                            </div>
+                            <div class="travel-body-r">
+                                <p id="travel-price">845€<span>/ personnes</span></p>
+                                <div class="travel-star">
+                                    <div class="stars">
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                        <span class="material-symbols-outlined gold">star</span>
+                                    </div>
+                                    <img src="assets/img/hotel-icon.svg" alt="Icon d'hotel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <img src="assets/img/logo-semoov.svg" alt="Semoov écrit en toutes lettres dont le V est en forme d'avion." class="footer-brand">
+            <div class="links">
+                <div class="sitemap">
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">Accueil</li>
+                        <li>Présentation</li>
+                        <li>Catégories</li>
+                        <li>Avis des voyageurs</li>
+                    </ul>
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">Catégories</li>
+                        <li>Toutes les catégories</li>
+                        <li>Lieux de tournage</li>
+                        <li>Studios</li>
+                        <li>Parcs</li>
+                    </ul>
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">A propos</li>
+                        <li>Qui sommes nous</li>
+                        <li>Expedia Group</li>
+                    </ul>
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">Contact</li>
+                        <li>Formulaire de contact</li>
+                        <li>F.A.Q.</li>
+                    </ul>
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">Compte</li>
+                        <li>Connexion</li>
+                        <li>Inscription</li>
+                        <li>Mon compte</li>
+                    </ul>
+                    <ul class="sitemap-tree">
+                        <li class="sitemap-title">Mentions légales</li>
+                        <li>Mentions légales</li>
+                        <li>Politiques de confidentialités</li>
+                        <li>Politiques des cookies</li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <p>Suivez nous sur les réseaux sociaux !</p>
+                    <div class="socialmedia-icon">
+                        <a href="#"><img src="assets/img/insta-icon.png" alt="Logo d'instagram"></a>
+                        <a href="#"><img src="assets/img/ytb-icon.png" alt="Logo de youtube"></a>
+                        <a href="#"><img src="assets/img/tiktok-icon.png" alt="Logo de tiktok"></a>
+                        <a href="#"><img src="assets/img/twitter-icon.png" alt="Logo de twitter"></a>
+                        <a href="#"><img src="assets/img/facebook-icon.png" alt="Logo de facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="legal">© 2023 Semoov, an Expedia Group company. All rights reserved. Semoov  Logo is trademark or registered trademark of Expedia, Inc. CST# 2029030-50.</p>
+        </footer>
 
     <!-- Cutsom JS -->
     <script src="assets/script/app.js"></script>
