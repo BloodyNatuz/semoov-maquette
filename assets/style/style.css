@@ -1235,3 +1235,227 @@ footer .legal{
         scale: .6;
     }
 }
+
+/* PAGE VOYAGE */
+
+/* HERO */
+
+.travel-hero{
+    margin: 0 10em;
+}
+
+.travel-informations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-informations .travel-info-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.travel-informations .travel-info-l p{
+    margin: .5em 0;
+}
+
+.travel-informations .travel-info-l .stars{
+    scale: 1.1;
+}
+
+.travel-informations .travel-info-l .travel-info{
+    font-weight: bolder;
+}
+
+.travel-informations .travel-info-l h3{
+    text-decoration: none;
+}
+
+.travel-informations .travel-info-l .travel-activite{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.travel-informations .travel-info-l .travel-activite img{
+    padding-right: 1em;
+}
+
+.travel-informations .travel-info-r > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.travel-informations .travel-info-r .travel-info-img-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-informations .travel-info-r .travel-info-img-info .travel-info-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.travel-informations .travel-info-r .travel-info-img-info .travel-info-location img{
+    width: 10%;
+    padding-right: .5em;
+}
+
+/* HERO RESPONSIVE */
+
+@media (max-width:900px){
+    .travel-hero{
+        margin: 0 1.3em;
+    }
+
+    .travel-hero h1{
+        font-size: 40pt;
+    }
+
+    .travel-hero h2{
+        font-size: 30pt;
+    }
+
+    .travel-informations{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .travel-informations .travel-info-l{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .travel-informations .travel-info-l .travel-activite{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .travel-informations .travel-info-l .travel-activite img{
+        padding-right: 1em;
+    }
+
+    .travel-informations .travel-info-r{
+        width: 100%;
+    }
+
+    .travel-informations .travel-info-r > img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .travel-informations .travel-info-r .travel-info-img-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .travel-informations .travel-info-r .travel-info-img-info .travel-info-location{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .travel-informations .travel-info-r .travel-info-img-info .travel-info-location img{
+        width: 10%;
+        padding-right: .5em;
+    }
+}
+
+/* ROOMS */
+
+.main-rooms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10em;
+    margin-bottom: 5em;
+}
+
+.main-rooms .room{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #0074d9;
+    padding: 2em 1em;
+    border-radius: 25px;
+    margin: 1em 0;
+}
+
+.main-rooms .room .room-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2em;
+}
+
+.main-rooms .room .room-info img{
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+
+.main-rooms .room .room-info p{
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+/* ROOMS RESPONSIVE */
+
+@media (max-width:900px){
+    .main-rooms{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5em 1.3em;
+    }
+
+    .main-rooms .room{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #0074d9;
+        padding: 2em 1em;
+        border-radius: 25px;
+        margin-bottom: 1em;
+    }
+
+    .main-rooms .room .room-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+    }
+
+    .main-rooms .room .room-info img{
+        border-radius: 25px;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .main-rooms .room .room-info p{
+        margin: 1em 0;
+        text-align: center;
+    }
+}
