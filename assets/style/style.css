@@ -7,6 +7,8 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
     color: #0D1821;
     font-family: 'Poppins', sans-serif;
     font-size: 16pt;
@@ -528,7 +530,8 @@ nav a:hover{
 footer{
     display: flex;
     flex-direction: column;
-    margin: 0 10em;
+    margin: 0 10%;
+    width: 75%;
 }
 
 .footer-brand{
@@ -541,11 +544,11 @@ footer .links{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    justify-content: space-between ;
     height: fit-content;
     width: fit-content;
     grid-template-areas: 
     "links links socialmedia";
-    margin-left: -10.5em;
 }
 
 footer .links .sitemap{
@@ -555,8 +558,9 @@ footer .links .sitemap{
     justify-content: space-between;
     align-items: start;
     height: fit-content;
-    width: max-content;
+    width: fit-content;
     scale: 0.7;
+    margin-right: 5em;
 }
 
 footer .links .sitemap .sitemap-title{
@@ -573,6 +577,7 @@ footer .links .socialmedia{
     grid-area: socialmedia;
     scale: 0.7;
     text-align: center;
+    margin-left: 5em;
 }
 
 footer .links .socialmedia-icon{
