@@ -19,10 +19,11 @@ li{
     list-style: none;
 }
 
-a{
+a, button{
     text-decoration: none;
     color: #0D1821;
     font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
 }
 
 h1{
@@ -532,6 +533,7 @@ footer{
     flex-direction: column;
     margin: 0 10em;
     width: 75%;
+    margin-top: 5em;
 }
 
 .footer-brand{
@@ -936,7 +938,6 @@ footer .legal{
     text-align: center;
     width: 55%;
     margin-top: 3em;
-    margin-bottom: 5em;
 
 }
 
@@ -1399,7 +1400,6 @@ footer .legal{
     justify-content: center;
     align-items: center;
     margin: 0 10em;
-    margin-bottom: 5em;
 }
 
 .main-rooms .room{
@@ -1471,5 +1471,122 @@ footer .legal{
     .main-rooms .room .room-info p{
         margin: 1em 0;
         text-align: center;
+    }
+}
+
+/* PAGE LOGIN */
+
+/* HEADER */
+
+.login-header{
+    height: 100vh;
+}
+
+/* HERO */
+
+.login{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-l{
+    padding-left: 10em;
+    width: 25%;
+}
+
+.login-l form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.login-l form input{
+    width: 100%;
+    padding: 1em 1em;
+    margin: .5em 0;
+    border: 1px solid #0D1821;
+    border-radius: .2em;
+}
+
+.login-l form ul.mdp-helper li{
+    list-style: disc;
+}
+
+.login-l form ul.mdp-helper li.valid{
+    color: green;
+    text-decoration-line: line-through;
+}
+
+.login-l form.valid input{
+    border : 1px solid green;
+}
+
+.login-l form .login-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-l form .login-btns .logs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.login-l form .login-btns .logs a, .login-l form .login-btns .logs button{
+    margin-top: 1em;
+}
+
+.login-r{
+    background-image: url(../img/login-bg.webp);
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* HEADER RESPONSIVE */
+
+@media (max-width:900px){
+    .login-header{
+        margin-bottom: 10em;
+    }
+
+    .login-header h1{
+        font-size: 40pt;
+    }
+
+    .login{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-l{
+        padding: 0;
+        width: 75%;
+    }
+
+    .login-l form{
+        align-items: center;
+    }
+
+    .login-l form input{
+        width: 75%;
+    }
+
+    .login-r{
+        display: none;
     }
 }
