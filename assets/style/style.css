@@ -530,7 +530,7 @@ nav a:hover{
 footer{
     display: flex;
     flex-direction: column;
-    margin: 0 10%;
+    margin: 0 10em;
     width: 75%;
 }
 
@@ -610,6 +610,7 @@ footer .legal{
         margin: 0 1.3em;
         justify-content: center;
         align-items: center;
+        width: fit-content;
     }
 
     .footer-brand{
@@ -627,6 +628,14 @@ footer .legal{
 
     footer .links .sitemap{
         display: none;
+    }
+
+    footer .socialmedia{
+        margin: 0 !important;
+    }
+
+    footer .legal{
+        text-align: center;
     }
 }
 
