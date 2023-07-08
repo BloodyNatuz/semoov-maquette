@@ -1801,3 +1801,31 @@ footer .legal{
     align-items: flex-start;
     margin: 0 10em;
 }
+
+/* PAGE MODELE RESPONSIVE */
+
+@media (max-width:900px){
+    .page-header{
+        margin: 2em 2em;
+    }
+
+    .page-header h1{
+        font-size: 40pt;
+    }
+
+    .model-main{
+        margin: 0 2em;
+    }
+
+    .model-main h2{
+        font-size: 20pt;
+    }
+
+    .model-main h3{
+        font-size: 16pt;
+    }
+
+    .model-main p{
+        font-size: 12pt;
+    }
+}
