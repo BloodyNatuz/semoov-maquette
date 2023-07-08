@@ -248,7 +248,7 @@ nav a:hover{
 @media (max-width:900px) {
     .hero{
         margin: 0;
-        margin-top: 5em;
+        margin-top: 8em;
         text-align: center;
         align-items: center;
     }
@@ -258,6 +258,10 @@ nav a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .hero-content .btn-primary{
+        margin-bottom: 5em;
     }
     
     .hero h1{
@@ -1511,16 +1515,16 @@ footer .legal{
     border-radius: .2em;
 }
 
-.login-l form ul.mdp-helper li{
+.register-r form ul.mdp-helper li{
     list-style: disc;
 }
 
-.login-l form ul.mdp-helper li.valid{
+.register-r form ul.mdp-helper li.valid{
     color: green;
     text-decoration-line: line-through;
 }
 
-.login-l form.valid input{
+.register-r form.valid input{
     border : 1px solid green;
 }
 
