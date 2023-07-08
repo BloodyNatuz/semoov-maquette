@@ -1534,6 +1534,7 @@ footer .legal{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 3em;
 }
 
 .login-l form .login-btns .logs{
