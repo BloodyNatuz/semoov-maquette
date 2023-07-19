@@ -1844,3 +1844,47 @@ footer .legal{
         font-size: 12pt;
     }
 }
+
+/* PAGE PROGRAMME */
+
+.prog-header{
+    background-image: url(../img/prog-bg.webp);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.prog-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 10em;
+}
+
+/* PAGE PROGRAMME RESPONSIVE */
+
+@media (max-width:900px){
+    .prog-header{
+        margin: 2em 2em;
+    }
+
+    .prog-header h1{
+        font-size: 32pt;
+    }
+
+    .prog-main{
+        margin: 0 2em;
+    }
+
+    .prog-main h2{
+        font-size: 20pt;
+    }
+
+    .prog-main h3{
+        font-size: 16pt;
+    }
+
+    .prog-main p{
+        font-size: 12pt;
+    }
+}
