@@ -668,7 +668,7 @@ footer .legal{
 }
 
 .about-hero p{
-    width: 60%;
+    width: 50%;
 }
 
 /* HERO RESPONSIVE */
@@ -741,6 +741,21 @@ footer .legal{
     .aboutchiffre .about-info p{
         width: 50%;
     }
+}
+
+/* Btn 1 voyage 1 arbre planté */
+
+.programme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+}
+
+.programme a{
+    text-align: center;
+    margin: 0 1em;
 }
 
 /* EXPEDIA GROUP */
